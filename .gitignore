@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+
+# Pytest
+.pytest_cache/
+
+# Datasets
+dataset/*
+!dataset/dataset_preparation.ipynb
+!dataset/dataset_transformation.ipynb
+
+# Checkpoints
+model/*/*_checkpoint.pth
+
+# Large model weight
+# model/resnet101/PlantVillage_ResNet101_best_weights.pth

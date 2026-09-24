@@ -32,4 +32,4 @@ dataset/*
 model/*/*_checkpoint.pth
 
 # Large model weight
-# model/resnet101/PlantVillage_ResNet101_best_weights.pth
+model/resnet101/CKPlus_ResNet101_best_weights.pth

@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import os
 from api.routers.resnet18 import router as resnet18_router
 from api.routers.resnet34 import router as resnet34_router
+from api.routers.resnet50 import router as resnet50_router
 
 load_dotenv()
 
@@ -24,3 +25,4 @@ app.add_middleware(
 
 app.include_router(resnet18_router)
 app.include_router(resnet34_router)
+app.include_router(resnet50_router)

@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 from api.routers.resnet18 import router as resnet18_router
+from api.routers.resnet34 import router as resnet34_router
 
 load_dotenv()
 
@@ -22,3 +23,4 @@ app.add_middleware(
     allow_headers=["*"])
 
 app.include_router(resnet18_router)
+app.include_router(resnet34_router)

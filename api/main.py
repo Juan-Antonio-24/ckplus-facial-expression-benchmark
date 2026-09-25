@@ -8,6 +8,7 @@ from api.routers.resnet50 import router as resnet50_router
 from api.routers.resnet101 import router as resnet101_router
 from api.routers.mobilenet_v2 import router as mobilenet_v2_router
 from api.routers.mobilenet_v3_small import router as mobilenet_v3_small_router
+from api.routers.mobilenet_v3_large import router as mobilenet_v3_large_router
 
 load_dotenv()
 
@@ -32,3 +33,4 @@ app.include_router(resnet50_router)
 app.include_router(resnet101_router)
 app.include_router(mobilenet_v2_router)
 app.include_router(mobilenet_v3_small_router)
+app.include_router(mobilenet_v3_large_router)

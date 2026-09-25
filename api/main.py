@@ -11,6 +11,7 @@ from api.routers.mobilenet_v3_small import router as mobilenet_v3_small_router
 from api.routers.mobilenet_v3_large import router as mobilenet_v3_large_router
 from api.routers.efficientnet_b0 import router as efficientnet_b0_router
 from api.routers.efficientnet_b1 import router as efficientnet_b1_router
+from api.routers.efficientnet_b2 import router as efficientnet_b2_router
 load_dotenv()
 
 FRONTEND_URL = os.getenv("FRONTEND_URL")
@@ -37,3 +38,4 @@ app.include_router(mobilenet_v3_small_router)
 app.include_router(mobilenet_v3_large_router)
 app.include_router(efficientnet_b0_router)
 app.include_router(efficientnet_b1_router)
+app.include_router(efficientnet_b2_router)

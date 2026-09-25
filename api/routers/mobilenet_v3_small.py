@@ -6,13 +6,13 @@ import torch.nn as nn
 from pathlib import Path
 from torchvision import models
 
-router = APIRouter(prefix="/mobilenet_v2", tags=["MobilenetV2"])
+router = APIRouter(prefix="/mobilenet_v3_small", tags=["MobileNetV3 Small"])
 
-class CKPlus_MobileNetV2(nn.Module):
+class CKPlus_MobileNetV3Small(nn.Module):
     def __init__(self, num_class=8, freeze_backbone=False):
         super().__init__()
 
-        self.backbone = models.mobilenet_v2(weights="IMAGENET1K_V2")
+        self.backbone = models.mobilenet_v3_small(weights="IMAGENET1K_V1")
 
         if freeze_backbone:
             for param in self.backbone.parameters():
@@ -39,10 +39,10 @@ label_dataset = {
 height_width = 224
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = CKPlus_MobileNetV2()
+model = CKPlus_MobileNetV3Small()
 
 BASE_DIR = Path(__file__).resolve().parent
-model_path = BASE_DIR.parent.parent / "model" / "mobilenet_v2" / "CKPlus_MobileNetV2_best_weights.pth"
+model_path = BASE_DIR.parent.parent / "model" / "mobilenet_v3_small" / "CKPlus_MobileNetV3Small_best_weights.pth"
 model.load_state_dict(torch.load(model_path, map_location=device))
 model.to(device)
 

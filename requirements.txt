@@ -1,0 +1,24 @@
+# Deep Learning
+torch==2.14.0
+torchvision==0.29.0
+
+# Data Processing
+numpy==2.5.3
+pandas==3.0.6
+Pillow==12.3.0
+
+# Machine Learning & Evaluation
+scikit-learn==1.9.1
+
+# Visualization
+matplotlib==3.11.2
+seaborn==0.13.2
+adjustText==1.4.0
+
+# Model Analysis
+thop==0.1.1.post2209072238
+
+# API
+fastapi==0.141.1
+uvicorn==0.53.0
+python-multipart==0.0.32

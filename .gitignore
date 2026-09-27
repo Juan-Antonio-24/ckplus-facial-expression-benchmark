@@ -33,3 +33,6 @@ model/*/*_checkpoint.pth
 
 # Large model weight
 model/resnet101/CKPlus_ResNet101_best_weights.pth
+
+# External test images
+results/external_test_images

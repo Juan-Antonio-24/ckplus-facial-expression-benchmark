@@ -394,20 +394,20 @@ Computational characteristics are evaluated using:
 The following table summarizes the test performance and computational
 characteristics obtained for each evaluated architecture.
 
-| Model | Accuracy | Macro F1 | Parameters (M) | GFLOPs | Model Size (MB) | Training Time (s) |
-|---|---:|---:|---:|---:|---:|---:|
-| ResNet18 | 92.31% | 85.80% | 11.18 | 1.824 | 42.73 | 67.56 |
-| ResNet34 | 92.31% | 87.92% | 21.29 | 3.678 | 81.35 | 67.45 |
-| ResNet50 | 90.77% | 82.72% | 23.52 | 4.132 | 90.05 | 113.38 |
-| ResNet101 | 92.31% | 87.39% | 42.52 | 7.864 | 162.81 | 163.73 |
-| MobileNetV2 | 81.54% | 63.71% | 2.23 | 0.326 | 8.77 | 72.37 |
-| MobileNetV3 Small | 73.85% | 56.91% | 1.53 | 0.061 | 5.96 | 31.46 |
-| MobileNetV3 Large | 93.85% | 86.04% | 4.21 | 0.234 | 16.28 | 79.06 |
-| EfficientNet-B0 | 90.77% | 78.69% | 4.02 | 0.414 | 15.63 | 102.81 |
-| EfficientNet-B1 | 84.62% | 65.76% | 6.52 | 0.609 | 25.32 | 158.94 |
-| EfficientNet-B2 | 93.85% | 86.82% | 7.71 | 0.701 | 29.87 | 227.67 |
-| EfficientNet-B3 | 90.77% | 81.23% | 10.71 | 1.018 | 41.40 | 177.92 |
-| EfficientNet-B4 | 92.31% | 87.45% | 17.56 | 1.577 | 67.75 | 413.84 |
+| Model | Accuracy | Macro Precision | Macro Recall | Macro F1 | Parameters (M) | GFLOPs | Model Size (MB) | Training Time (s) |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| ResNet18 | 92.31% | 92.98% | 86.08% | 85.80% | 11.18 | 1.824 | 42.73 | 67.56 |
+| ResNet34 | 92.31% | 89.12% | 88.83% | 87.92% | 21.29 | 3.678 | 81.35 | 67.45 |
+| ResNet50 | 90.77% | 90.28% | 83.25% | 82.72% | 23.52 | 4.132 | 90.05 | 113.38 |
+| ResNet101 | 92.31% | 88.15% | 90.17% | 87.39% | 42.52 | 7.864 | 162.81 | 163.73 |
+| MobileNetV2 | 81.54% | 68.60% | 65.17% | 63.71% | 2.23 | 0.326 | 8.77 | 72.37 |
+| MobileNetV3 Small | 73.85% | 56.59% | 65.58% | 56.91% | 1.53 | 0.061 | 5.96 | 31.46 |
+| MobileNetV3 Large | 93.85% | 89.50% | 86.08% | 86.04% | 4.21 | 0.234 | 16.28 | 79.06 |
+| EfficientNet B0 | 90.77% | 79.47% | 78.04% | 78.69% | 4.02 | 0.414 | 15.63 | 102.81 |
+| EfficientNet B1 | 84.62% | 74.65% | 64.50% | 65.76% | 6.52 | 0.609 | 25.32 | 158.94 |
+| EfficientNet B2 | 93.85% | 91.97% | 87.12% | 86.82% | 7.71 | 0.701 | 29.87 | 227.67 |
+| EfficientNet B3 | 90.77% | 89.55% | 79.83% | 81.23% | 10.71 | 1.018 | 41.40 | 177.92 |
+| EfficientNet B4 | 92.31% | 91.21% | 88.83% | 87.45% | 17.56 | 1.577 | 67.75 | 413.84 |
 
 ## Training and Validation Results
 
